@@ -8,10 +8,12 @@
     <link href="${tg.url('/css/bootstrap.min.css')}" rel="stylesheet">
     <link href="${tg.url('/css/datepicker3.css')}" rel="stylesheet" />
     <link href="${tg.url('/css/styles.css')}" rel="stylesheet">
-
+    <script src="${tg.url('/js/jquery-1.11.1.min.js')}"></script>
+    <script src="${tg.url('/js/alert.js')}"></script>
 	<!--[if lt IE 9]>
 	<script src="${tg.url('/js/html5/html5shiv.js')}"></script>
 	<script src="${tg.url('js/html5/respond.min.js')}"></script>
+
 	<![endif]-->
 </head>
 <body>
@@ -21,7 +23,7 @@
   % if flash:
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-              ${flash | n}
+                <script>$.alert("${str(tg.flash_obj.pop_payload()['message'])}" ,{autoclose:true,type:'info',title:false});</script>
         </div>
       </div>
   % else:
@@ -42,7 +44,7 @@
 							</div>
 							<div class="checkbox">
 								<label>
-									<input name="remember" type="checkbox" value="Remember Me">Remember Me
+									<input name="remember" type="checkbox" name="remember" value="2252000">Remember Me
 								</label>
 							</div>
                         <button type="submit" class="btn btn-primary">${_('login')}</button>
@@ -56,5 +58,6 @@
 
     <script src="${tg.url('/js/jquery-1.11.1.min.js')}"></script>
 	<script src="${tg.url('/js/bootstrap.min.js')}"></script>
+<script src="${tg.url('/js/alert.js')}"></script>
 </body>
 </html>

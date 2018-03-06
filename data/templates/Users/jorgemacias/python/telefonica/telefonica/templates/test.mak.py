@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1520294504.167874
+_modified_time = 1520296440.751808
 _enable_loop = True
 _template_filename = '/Users/jorgemacias/python/telefonica/telefonica/templates/test.mak'
 _template_uri = '/Users/jorgemacias/python/telefonica/telefonica/templates/test.mak'
@@ -63,7 +63,7 @@ def render_title(context):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_writer = context.writer()
-        __M_writer(u'\n  Welcome to Mercury\n')
+        __M_writer(u'\n  Welcome to Telefonica\n')
         return ''
     finally:
         context.caller_stack._pop_frame()

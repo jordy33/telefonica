@@ -186,8 +186,12 @@
 			<li><a href="elements.html"><em class="fa fa-toggle-off">&nbsp;</em> UI Elements</a></li>
 			<li><a href="panels.html"><em class="fa fa-clone">&nbsp;</em> Alerts &amp; Panels</a></li>
             <li><a href="jqgrid.html"><em class="fa fa-clone">&nbsp;</em> JqGrid</a></li>
-              <li><a href="test.html"><em class="fa fa-clone">&nbsp;</em> test</a></li>
+            % if request.identity['repoze.who.userid']=='manager':
+                <li><a href="test.html"><em class="fa fa-clone">&nbsp;</em> Test</a></li>
+            % endif
+
 			<li class="parent "><a data-toggle="collapse" href="#sub-item-1">
+
 				<em class="fa fa-navicon">&nbsp;</em> Multilevel <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="fa fa-plus"></em></span>
 				</a>
 				<ul class="children collapse" id="sub-item-1">

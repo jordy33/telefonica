@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1520292960.213945
+_modified_time = 1520295740.068263
 _enable_loop = True
 _template_filename = '/Users/jorgemacias/python/telefonica/telefonica/templates/charts.mak'
 _template_uri = '/Users/jorgemacias/python/telefonica/telefonica/templates/charts.mak'
@@ -63,7 +63,7 @@ def render_title(context):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_writer = context.writer()
-        __M_writer(u'\n  Welcome to Mercury\n')
+        __M_writer(u'\n  Welcome to Telefonica\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
