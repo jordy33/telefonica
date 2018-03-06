@@ -1,6 +1,6 @@
 <%inherit file="local:templates.master"/>
 <%def name="title()">
-  Welcome to Mercury
+  Welcome to Telefonica
 </%def>
 <%def name="head_content()">
 

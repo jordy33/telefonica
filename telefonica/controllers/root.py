@@ -150,3 +150,8 @@ class RootController(BaseController):
     def jqgrid(self):
         """Handle the 'about' page."""
         return dict(page='empty')
+
+    @expose('telefonica.templates.test')
+    def test(self):
+        """Handle the 'about' page."""
+        return dict(page='empty')

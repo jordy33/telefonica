@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1520293674.137511
+_modified_time = 1520294028.343901
 _enable_loop = True
 _template_filename = '/Users/jorgemacias/python/telefonica/telefonica/templates/jqgrid.mak'
 _template_uri = '/Users/jorgemacias/python/telefonica/telefonica/templates/jqgrid.mak'
@@ -32,7 +32,7 @@ def render_body(context,**pageargs):
         __M_writer = context.writer()
         __M_writer(u'\n')
         __M_writer(u'\n')
-        __M_writer(u'\n<!--main content start-->\n<section id="main-content">\n\n      <!-- page start-->\n\n    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">\n\t\t<div class="row">\n\t\t\t<ol class="breadcrumb">\n\t\t\t\t<li><a href="#">\n\t\t\t\t\t<em class="fa fa-home"></em>\n\t\t\t\t</a></li>\n\t\t\t\t<li class="active">Widgets</li>\n\t\t\t</ol>\n\t\t</div><!--/.row-->\n        <br>\n\t\t<div class="row">\n            <div style="margin-left:20px">\n            <table id="jqGrid"></table>\n            <div id="jqGridPager"></div>\n            </div>\n\t\t</div><!--/.row-->\n\n\t\t\n\n      <!-- page end-->\n</div>\n  </section>\n</section>\n\n')
+        __M_writer(u'\n<!--main content start-->\n<section id="main-content">\n\n      <!-- page start-->\n\n    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">\n\t\t<div class="row">\n\t\t\t<ol class="breadcrumb">\n\t\t\t\t<li><a href="#">\n\t\t\t\t\t<em class="fa fa-home"></em>\n\t\t\t\t</a></li>\n\t\t\t\t<li class="active">Widgets</li>\n\t\t\t</ol>\n\t\t</div><!--/.row-->\n        <br>\n\t\t<div class="row">\n            <div style="margin-left:20px">\n            <table id="jqGrid"></table>\n            <div id="jqGridPager"></div>\n            </div>\n\t\t</div><!--/.row-->\n\n\n\n      <!-- page end-->\n</div>\n  </section>\n</section>\n\n')
         __M_writer(u'\n')
         return ''
     finally:
