@@ -12,8 +12,7 @@
     <script src="${tg.url('/js/alert.js')}"></script>
 	<!--[if lt IE 9]>
 	<script src="${tg.url('/js/html5/html5shiv.js')}"></script>
-	<script src="${tg.url('js/html5/respond.min.js')}"></script>
-
+	<script src="${tg.url('/js/html5/respond.min.js')}"></script>
 	<![endif]-->
 </head>
 <body>
@@ -54,8 +53,6 @@
 			</div>
 		</div><!-- /.col-->
 	</div><!-- /.row -->
-
-
     <script src="${tg.url('/js/jquery-1.11.1.min.js')}"></script>
 	<script src="${tg.url('/js/bootstrap.min.js')}"></script>
 <script src="${tg.url('/js/alert.js')}"></script>

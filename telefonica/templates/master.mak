@@ -12,7 +12,10 @@
     <!-- jquery and alert -->
     <script src="${tg.url('/js/jquery-1.11.1.min.js')}"></script>
     <script src="${tg.url('/js/alert.js')}"></script>
-
+	<!--[if lt IE 9]>
+	<script src="${tg.url('/js/html5/html5shiv.js')}"></script>
+	<script src="${tg.url('/js/html5/respond.min.js')}"></script>
+	<![endif]-->
     <!-- jqgrid -->
     <script src="${tg.url('/js/jqgrid/jquery.jqgrid.min.js')}"></script>
     <script src="${tg.url('/js/jqgrid/i18n/grid.locale-es.js')}"></script>
