@@ -44,7 +44,7 @@
 				<li><a href="#">
 					<em class="fa fa-home"></em>
 				</a></li>
-				<li class="active">Widgets</li>
+				<li class="active">JqGrid Example</li>
 			</ol>
 		</div><!--/.row-->
         <br>
