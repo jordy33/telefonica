@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1520298332.15915
+_modified_time = 1520299163.204333
 _enable_loop = True
 _template_filename = u'/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak'
 _template_uri = u'/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak'
@@ -60,7 +60,7 @@ def render_body(context,**pageargs):
         __M_writer(escape(tg.url('/js/mqtt/mqttws31.js')))
         __M_writer(u'" type="text/javascript"></script>\n    <!-- notifications grid -->\n    <!-- moment for UTC to local dates -->\n    <script src="')
         __M_writer(escape(tg.url('/js/moment/moment.js')))
-        __M_writer(u'"></script>\n\n\n    <script src="js/lumino/chart.min.js"></script>\n\t<script src="js/lumino/chart-data.js"></script>\n\t<script src="js/lumino/easypiechart.js"></script>\n\t<script src="js/lumino/easypiechart-data.js"></script>\n\t<script src="js/lumino/bootstrap-datepicker.js"></script>\n\t<script src="js/lumino/custom.js"></script>\n\n    <style type="text/css">\n    html, body {\n        margin: 0;\n        padding: 0;\n        font-size:90%;\n    }\n    </style>\n    <!-- Global JavaScript -->\n    <script type="text/javascript">\n\t\twindow.onload = function () {\n\t    var chart1 = document.getElementById("line-chart").getContext("2d");\n                    window.myLine = new Chart(chart1).Line(lineChartData, {\n                    responsive: true,\n                    scaleLineColor: "rgba(0,0,0,.2)",\n                    scaleGridLineColor: "rgba(0,0,0,.05)",\n                    scaleFontColor: "#c5c7cc"\n                    });\n        };\n\t</script>\n\n    ')
+        __M_writer(u'"></script>\n\n\n    <script src="js/lumino/chart.min.js"></script>\n\t<script src="js/lumino/chart-data.js"></script>\n\t<script src="js/lumino/easypiechart.js"></script>\n\t<script src="js/lumino/easypiechart-data.js"></script>\n\t<script src="js/lumino/bootstrap-datepicker.js"></script>\n\t<script src="js/lumino/custom.js"></script>\n\n    <style type="text/css">\n    html, body {\n        margin: 0;\n        padding: 0;\n        font-size:100%;\n    }\n    </style>\n    <!-- Global JavaScript -->\n    <script type="text/javascript">\n\t\twindow.onload = function () {\n\t    var chart1 = document.getElementById("line-chart").getContext("2d");\n                    window.myLine = new Chart(chart1).Line(lineChartData, {\n                    responsive: true,\n                    scaleLineColor: "rgba(0,0,0,.2)",\n                    scaleGridLineColor: "rgba(0,0,0,.05)",\n                    scaleFontColor: "#c5c7cc"\n                    });\n        };\n\t</script>\n\n    ')
         __M_writer(escape(self.head_content()))
         __M_writer(u'\n</head>\n\n')
         if tg.auth_stack_enabled:
