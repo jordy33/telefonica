@@ -25,6 +25,7 @@
 				viewrecords: true,
                 height: 250,
                 rowNum: 20,
+                autowidth: true,
                 pager: "#jqGridPager"
             });
         });
@@ -48,14 +49,13 @@
 		</div><!--/.row-->
         <br>
 		<div class="row">
-            <div style="margin-left:20px">
+            <div style="margin-left:10px">
             <table id="jqGrid"></table>
             <div id="jqGridPager"></div>
             </div>
 		</div><!--/.row-->
-
-
-
+        <br>
+        <br>
       <!-- page end-->
 </div>
   </section>

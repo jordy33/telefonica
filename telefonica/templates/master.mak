@@ -236,9 +236,10 @@
 
 <%def name="footer()">
    <!-- INSERT FOOTER -->
-    <div class="col-sm-12">
-        <p class="back-link">Copyright &copy; Madd Systems ${h.current_year()}&nbsp;</p>
-
+    <div class="text-right">
+        <div class="credits">
+              <p>Copyright &copy; Madd Systems ${h.current_year()}&nbsp;</p>
+        </div>
     </div>
 </%def>
 

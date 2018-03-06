@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lumino - Login</title>
+	<title>Telefonica</title>
 
     <link href="${tg.url('/css/bootstrap.min.css')}" rel="stylesheet">
     <link href="${tg.url('/css/datepicker3.css')}" rel="stylesheet" />

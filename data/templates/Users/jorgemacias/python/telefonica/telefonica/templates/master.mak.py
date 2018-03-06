@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1520296417.267831
+_modified_time = 1520298332.15915
 _enable_loop = True
 _template_filename = u'/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak'
 _template_uri = u'/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak'
@@ -40,7 +40,11 @@ def render_body(context,**pageargs):
         __M_writer(escape(tg.url('/js/jquery-1.11.1.min.js')))
         __M_writer(u'"></script>\n    <script src="')
         __M_writer(escape(tg.url('/js/alert.js')))
-        __M_writer(u'"></script>\n\n    <!-- jqgrid -->\n    <script src="')
+        __M_writer(u'"></script>\n\t<!--[if lt IE 9]>\n\t<script src="')
+        __M_writer(escape(tg.url('/js/html5/html5shiv.js')))
+        __M_writer(u'"></script>\n\t<script src="')
+        __M_writer(escape(tg.url('/js/html5/respond.min.js')))
+        __M_writer(u'"></script>\n\t<![endif]-->\n    <!-- jqgrid -->\n    <script src="')
         __M_writer(escape(tg.url('/js/jqgrid/jquery.jqgrid.min.js')))
         __M_writer(u'"></script>\n    <script src="')
         __M_writer(escape(tg.url('/js/jqgrid/i18n/grid.locale-es.js')))
@@ -93,9 +97,9 @@ def render_footer(context):
     try:
         h = context.get('h', UNDEFINED)
         __M_writer = context.writer()
-        __M_writer(u'\n   <!-- INSERT FOOTER -->\n    <div class="col-sm-12">\n        <p class="back-link">Copyright &copy; Madd Systems ')
+        __M_writer(u'\n   <!-- INSERT FOOTER -->\n    <div class="text-right">\n        <div class="credits">\n              <p>Copyright &copy; Madd Systems ')
         __M_writer(escape(h.current_year()))
-        __M_writer(u'&nbsp;</p>\n\n    </div>\n')
+        __M_writer(u'&nbsp;</p>\n        </div>\n    </div>\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -206,6 +210,6 @@ def render_content_wrapper(context):
 
 """
 __M_BEGIN_METADATA
-{"source_encoding": "utf-8", "line_map": {"17": 0, "25": 1, "26": 4, "27": 4, "28": 5, "29": 5, "30": 6, "31": 6, "32": 7, "33": 7, "34": 8, "35": 8, "36": 9, "37": 9, "38": 10, "39": 10, "40": 13, "41": 13, "42": 14, "43": 14, "44": 17, "45": 17, "46": 18, "47": 18, "48": 20, "49": 20, "50": 23, "51": 23, "52": 25, "53": 25, "54": 26, "55": 26, "56": 30, "57": 30, "58": 33, "59": 33, "60": 63, "61": 63, "62": 66, "63": 67, "64": 68, "65": 68, "66": 68, "67": 70, "68": 71, "69": 71, "70": 71, "71": 72, "72": 72, "73": 73, "74": 73, "75": 75, "76": 75, "77": 78, "78": 88, "79": 90, "80": 92, "81": 94, "82": 221, "83": 232, "84": 240, "85": 245, "91": 234, "96": 234, "97": 237, "98": 237, "104": 90, "108": 90, "114": 94, "123": 92, "132": 242, "136": 242, "142": 80, "147": 80, "148": 81, "149": 81, "155": 96, "163": 96, "164": 168, "165": 168, "166": 171, "167": 171, "168": 189, "169": 190, "170": 192, "171": 209, "172": 209, "173": 209, "174": 209, "175": 219, "176": 219, "182": 224, "189": 224, "190": 225, "194": 227, "195": 228, "196": 229, "197": 229, "198": 229, "199": 231, "200": 231, "201": 231, "207": 201}, "uri": "/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak", "filename": "/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak"}
+{"source_encoding": "utf-8", "line_map": {"17": 0, "25": 1, "26": 4, "27": 4, "28": 5, "29": 5, "30": 6, "31": 6, "32": 7, "33": 7, "34": 8, "35": 8, "36": 9, "37": 9, "38": 10, "39": 10, "40": 13, "41": 13, "42": 14, "43": 14, "44": 16, "45": 16, "46": 17, "47": 17, "48": 20, "49": 20, "50": 21, "51": 21, "52": 23, "53": 23, "54": 26, "55": 26, "56": 28, "57": 28, "58": 29, "59": 29, "60": 33, "61": 33, "62": 36, "63": 36, "64": 66, "65": 66, "66": 69, "67": 70, "68": 71, "69": 71, "70": 71, "71": 73, "72": 74, "73": 74, "74": 74, "75": 75, "76": 75, "77": 76, "78": 76, "79": 78, "80": 78, "81": 81, "82": 91, "83": 93, "84": 95, "85": 97, "86": 224, "87": 235, "88": 244, "89": 249, "95": 237, "100": 237, "101": 241, "102": 241, "108": 93, "112": 93, "118": 97, "127": 95, "136": 246, "140": 246, "146": 83, "151": 83, "152": 84, "153": 84, "159": 99, "167": 99, "168": 171, "169": 171, "170": 174, "171": 174, "172": 192, "173": 193, "174": 195, "175": 212, "176": 212, "177": 212, "178": 212, "179": 222, "180": 222, "186": 227, "193": 227, "194": 228, "198": 230, "199": 231, "200": 232, "201": 232, "202": 232, "203": 234, "204": 234, "205": 234, "211": 205}, "uri": "/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak", "filename": "/Users/jorgemacias/python/telefonica/telefonica/templates/master.mak"}
 __M_END_METADATA
 """
